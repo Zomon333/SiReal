@@ -1,4 +1,5 @@
 package com.zomon333.SiReal;
+import com.zomon333.SiReal.Reference;
 
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
@@ -7,12 +8,14 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 
-@Mod(modid = SiReal.MODID, name = SiReal.NAME, version = SiReal.VERSION)
-public class SiReal
+
+
+@Mod(modid = Reference.modid, name = Reference.name, version = Reference.version)
+public class Main
 {
     public static final String MODID = "SiReal";
     public static final String NAME = "SiReal";
-    public static final String VERSION = "0.0.1";
+    public static final String VERSION = "0.0.2";
 
     private static Logger logger;
 
