@@ -1,7 +1,7 @@
 package com.zomon333.SiReal;
 
 public class Reference {
-    public static final String modid = "SiR";
+    public static final String modid = "sir";
     public static final String name = "SiReal";
     public static final String description = "A Silicon Realism Mod.";
     public static final String version = "0.0.2";

@@ -1,7 +1,7 @@
 [
 {
-  "modid": "SiReal",
-  "name": "SiR",
+  "modid": "sir",
+  "name": "SiReal",
   "description": "A Silicon Realism Mod.",
   "version": "${version}",
   "mcversion": "${mcversion}",
