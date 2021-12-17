@@ -1,5 +1,7 @@
 package com.zomon333.SiReal;
 
+import com.zomon333.SiReal.Main;
+
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 
@@ -22,11 +24,15 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry.*;
 import net.minecraftforge.registries.IForgeRegistryEntry;
 import net.minecraftforge.registries.RegistryBuilder;
+import org.apache.logging.log4j.Level;
 
 
 public class RegistryHandler extends Main {
 
     @SubscribeEvent public void registerBlocks(RegistryEvent.Register<Block> event){
+        logger.log(Level.INFO, "___________________");
+        logger.log(Level.INFO, "SiReal RegistryEvent.Register<Block>");
+        logger.log(Level.INFO, "___________________");
         int i = 0;
         while(i<BlockHolderHelper.blockCount)
         {
@@ -36,7 +42,9 @@ public class RegistryHandler extends Main {
     }
 
     @SubscribeEvent public void registerItems(RegistryEvent.Register<Item> event){
-
+        logger.log(Level.INFO, "___________________");
+        logger.log(Level.INFO, "SiReal RegistryEvent.Register<Item>");
+        logger.log(Level.INFO, "___________________");
         int i = 0;
         while(i<ItemHolderHelper.itemCount)
         {
@@ -47,7 +55,10 @@ public class RegistryHandler extends Main {
 
     @SubscribeEvent public void catchRegistry(RegistryEvent.NewRegistry event)
     {
-        RegistryBuilder::create;
+        logger.log(Level.INFO, "___________________");
+        logger.log(Level.INFO, "SiReal RegistryEvent.NewRegistry");
+        logger.log(Level.INFO, "___________________");
+        //RegistryBuilder::create;
         //https://mcforge.readthedocs.io/en/1.12.x/concepts/registries/#creating-registries
     }
 
